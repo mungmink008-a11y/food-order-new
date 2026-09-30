@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>เลือกอาหาร - Food Order</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page-card">
+
+        <h1>🍽️ Food Order</h1>
+
+        <h2>เมนูอาหาร</h2>
+
+        <p class="food-subtitle">
+            เลือกอาหารที่ต้องการ แล้วเพิ่มลงในตะกร้า
+        </p>
+
+
+        <!-- อาหารตามสั่ง -->
+        <h2 class="category-title">
+            🍳 อาหารตามสั่ง
+        </h2>
+
+        <div class="food-group">
+
+            <button
+                class="food-button"
+                onclick="addToCart('ข้าวกะเพราไก่', 50)"
+            >
+                <span class="food-name">
+                    ข้าวกะเพราไก่
+                </span>
+
+                <span class="food-price">
+                    50 บาท
+                </span>
+            </button>
+
+
+            <button
+                class="food-button"
+                onclick="addToCart('ข้าวผัดหมู', 50)"
+            >
+                <span class="food-name">
+                    ข้าวผัดหมู
+                </span>
+
+                <span class="food-price">
+                    50 บาท
+                </span>
+            </button>
+
+        </div>
+
+
+        <!-- ก๋วยเตี๋ยว -->
+        <h2 class="category-title">
+            🍜 ก๋วยเตี๋ยว
+        </h2>
+
+        <div class="food-group">
+
+            <button
+                class="food-button"
+                onclick="addToCart('ก๋วยเตี๋ยวหมู', 50)"
+            >
+                <span class="food-name">
+                    ก๋วยเตี๋ยวหมู
+                </span>
+
+                <span class="food-price">
+                    50 บาท
+                </span>
+            </button>
+
+
+            <button
+                class="food-button"
+                onclick="addToCart('ก๋วยเตี๋ยวไก่', 50)"
+            >
+                <span class="food-name">
+                    ก๋วยเตี๋ยวไก่
+                </span>
+
+                <span class="food-price">
+                    50 บาท
+                </span>
+            </button>
+
+        </div>
+
+
+        <!-- ของทอด -->
+        <h2 class="category-title">
+            🍗 ของทอด
+        </h2>
+
+        <div class="food-group">
+
+            <button
+                class="food-button"
+                onclick="addToCart('ไก่ทอด', 40)"
+            >
+                <span class="food-name">
+                    ไก่ทอด
+                </span>
+
+                <span class="food-price">
+                    40 บาท
+                </span>
+            </button>
+
+
+            <button
+                class="food-button"
+                onclick="addToCart('เฟรนช์ฟรายส์', 40)"
+            >
+                <span class="food-name">
+                    เฟรนช์ฟรายส์
+                </span>
+
+                <span class="food-price">
+                    40 บาท
+                </span>
+            </button>
+
+        </div>
+
+
+        <!-- ตะกร้า -->
+        <h2 class="cart-title">
+            🛒 ตะกร้าอาหาร
+        </h2>
+
+        <div id="cart">
+            ยังไม่มีอาหารในตะกร้า
+        </div>
+
+
+        <button
+            class="order-button"
+            onclick="goToOrder()"
+        >
+            ตรวจสอบออเดอร์
+        </button>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
